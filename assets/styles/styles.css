@@ -200,8 +200,8 @@ Intro and skills styles
 Experience and additional info styles
  */
 .experiences {
-    flex: 1 1 60%;
-    margin-right: 50px;
+    flex: 1 1 50%;
+    padding-right: 50px;
 }
 
 .experiences__header {
@@ -249,7 +249,9 @@ Experience and additional info styles
 }
 
 .additional-info {
-    flex: 1 1 40%;
+    flex: 1 1 50%;
+    justify-content: normal;
+    gap: 25px;
 }
 
 .additional-info__education {
