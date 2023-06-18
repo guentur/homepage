@@ -34,7 +34,7 @@ main {
 .fh {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .fv {
@@ -103,6 +103,7 @@ Contact info styles
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 30%;
 }
 
 .contact-info__block--center {
