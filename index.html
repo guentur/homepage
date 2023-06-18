@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <title>Résumé</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/timeline-vertical.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
@@ -11,7 +12,7 @@
     <div class="resume">
         <div class="container">
             <div class="resume__block">
-                <div class="contact-info__block contact-info__block--center">
+                <div class="fh contact-info__block--center">
                     <img class="contact-info__avatar" src="assets/img/avatar.png" alt="Avatar">
                 </div>
                 <h1 class="contact-info__header">Peretiatko Kyrylo</h1>
@@ -53,7 +54,13 @@
                             </div>
                             <span>kyrylo.peret@gmail.com</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/peretyatko/" target="_blank" rel="me" class="contact-info__item">
+                        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2134439150" rel="me" class="contact-info__item">
+                            <div class="contact-info__item-icon-wrapper">
+                                <img class="contact-info__item-icon" alt="Guitar" src="assets/img/guitar.png" >
+                            </div>
+                            <span>I am playing the guitar on my Steam account</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kyrylo-kyrylo/" target="_blank" rel="me" class="contact-info__item">
                             <div class="contact-info__item-icon-wrapper">
                                 <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                     <path
@@ -77,12 +84,14 @@
                             </path>
                         </svg>
                     </div>
-                    <p class="intro_text">Greetings!
-                        Who am I? I am a free developer!
-                        What do I do? I learn
-                        I was a PHP developer
-                        I worked as a PHP developer
-
+                    <p class="intro_text">
+                        Greetings!
+                        In the recent past I worked as a PHP developer,
+                        but being a free developer requires to learn new technologies,
+                        so that is why I have applied to this course.
+                        I enjoy discovering the practicality of simple solutions,
+                        and if something is complex, I aim to clarify it.
+                        While developing code is important to me, I also strive to enhance my efficiency.
                     </p>
                 </div>
             </div>
@@ -90,11 +99,11 @@
         <div class="container">
             <div class="resume__block">
                 <div class="skills">
-                    <h3 class="skills__header">Skills</h3>
-                    <div class="skills__container flex-lists">
-                        <div class="flex-lists__item">
-                            <h4 class="flex-lists__item-header">Hard Skills</h4>
-                            <ul class="flex-lists__item-list">
+                    <h3 class="skills__header">SKILLS</h3>
+                    <div class="skills__container lists fh">
+                        <div class="lists__item lists__item--half-width">
+                            <h4 class="lists__item-header">HARD SKILLS</h4>
+                            <ul class="lists__item-list">
                                 <li>PHP</li>
                                 <li>SQL (MySQL)</li>
                                 <li>Git</li>
@@ -107,13 +116,19 @@
                                 <li>HTML, CSS, JavaScript</li>
                             </ul>
                         </div>
-                        <div class="flex-lists__item">
-                            <h4 class="flex-lists__item-header">Soft Skills</h4>
-                            <ul class="flex-lists__item-list">
-                                <li>Analytical thinking</li>
-                                <li>Teamwork</li>
-                                <li>Motivation to study</li>
-                            </ul>
+                        <div class="lists__item lists__item--half-width lists__item--column">
+                            <div class="lists__item" style="width: 75%;">
+                                <h4 class="lists__item-header">SOFT SKILLS</h4>
+                                <ul class="lists__item-list">
+                                    <li>Analytical thinking</li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/posts/kyrylo-kyrylo_elogic-competition-tournament-activity-7027237566672162816-o2iQ?utm_source=share&amp;utm_medium=member_desktop" target="_blank" rel="details">
+                                            Teamwork
+                                        </a>
+                                    </li>
+                                    <li>Motivation to study</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -124,46 +139,171 @@
                 <div class="main-info fh">
 
                     <div class="experiences">
-                        <h3 class="experiences__header">Experience</h3>
-                        <div class="experiences__company">
-                            <div class="experiences__company-header">
-                                <span class="experiences__company-header-durability">For whole my life</span>
-                                <h3 class="experiences__company-header-name">BinaryStudio</h3>
+                        <h3 class="experiences__header">EXPERIENCE</h3>
+                        <div class="experiences__company-project">
+                                <span class="experiences__company-project-role">
+                                    <a target="_blank" rel="details"  href="https://business.adobe.com/products/magento/magento-commerce.html">Magento 2</a>
+                                </span>
+                            <h3 class="experiences__company-project-name">
+                                Magento 2 Backend Developer
+                            </h3>
+                            <p>Company: <a target="_blank" rel="details" href="https://elogic.co/">Elogic</a></p>
+                            <div class="experiences__company-project-durability">
+                                <p>16.02.2022 - 04.03.2023 (Full time)</p>
                             </div>
-
-                            <div class="experiences__company-project">
-                                <span class="experiences__company-project-role">Binary Studio Cat</span>
-                                <h3 class="experiences__company-project-name">Hooman project</h3>
-                                <ul class="experiences__company-project-responsibilities">
-                                    <li>Supported hoomans</li>
-                                    <li>Slept all the time</li>
-                                    <li>Lied on the keyboard</li>
-                                    <li>Watched my hoomans working</li>
-                                </ul>
+                            <ul class="experiences__company-project-responsibilities">
+                                <li>Communication with client</li>
+                                <li>Development of custom modules</li>
+                                <li>Legacy code refactoring</li>
+                            </ul>
+                        </div>
+                        <div class="experiences__company-project">
+                                <span class="experiences__company-project-role">
+                                    <a target="_blank" rel="details"  href="https://business.adobe.com/products/magento/magento-commerce.html">Magento 2</a>
+                                </span>
+                            <h3 class="experiences__company-project-name">
+                                Magento 2 Developer
+                            </h3>
+                            <p>Company: <a target="_blank" rel="details" href="https://www.linkedin.com/company/fixstacks/mycompany/">Fixstacks</a></p>
+                            <div class="experiences__company-project-durability">
+                                <p>08.01.2021 - 10.08.2021 (Part time)</p>
+                                <p>27.09.2021 - 22.11.2021 (Hourly)</p>
+                            </div>
+                            <ul class="experiences__company-project-responsibilities">
+                                <li>Bug fixing</li>
+                                <li>Development of custom modules</li>
+                                <li>Self-study</li>
+                            </ul>
+                        </div>
+                        <div class="experiences__company-project">
+                            <h3 class="experiences__company-project-name">
+                                Magento Learning Group
+                            </h3>
+                            <p>I have created and administer a Magento Learning Group.</p>
+                            <span class="experiences__company-project-durability">14.12.20 - 27.12.23</span>
+                            <ul class="experiences__company-project-responsibilities">
+                                <li>We collectively solve work problems and share the acquired knowledge.</li>
+                            </ul>
+                        </div>
+                        <div class="experiences__company-project">
+                            <span class="experiences__company-project-role">PHP, HTML, JS</span>
+                            <h3 class="experiences__company-project-name">
+                                Education Mentor
+                            </h3>
+                            <p>Company: <a target="_blank" rel="details"  href="https://www.linkedin.com/company/educoinbiz/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bss5QVZVsTO6orlRF6ahVHw%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-background_details_company">Educoin.biz</a></p>
+                            <span class="experiences__company-project-durability">04.05.2020 - 04.11.2020</span>
+                            <ul class="experiences__company-project-responsibilities">
+                                <li>Checking student work</li>
+                                <li>Writing reports</li>
+                                <li>Motivating students to learn</li>
+                            </ul>
+                        </div>
+                        <div class="experiences__company-project">
+                            <span class="experiences__company-project-role">HTML, JavaScript</span>
+                            <h3 class="experiences__company-project-name">
+                                <a class="experiences__company-project-link" href="https://github.com/guentur/Fish-and-Trash" target="_blank" rel="details" >
+                                    Fish-and-Trash Game
+                                </a>
+                            </h3>
+                            <a class="experiences__company-project-link" href="https://guentur.github.io/Fish-and-Trash/" target="_blank" rel="details" >
+                                Play on GitHub Pages
+                            </a>
+                            <ul class="experiences__company-project-responsibilities">
+                                <li>Drawing up the rules of the game</li>
+                                <li>Fish control</li>
+                                <li>Collecting game items</li>
+                            </ul>
+                        </div>
+                        <div class="experiences__company-project">
+                            <span class="experiences__company-project-role">PHP</span>
+                            <h3 class="experiences__company-project-name">
+                                <a class="experiences__company-project-link" href="https://github.com/guentur/MagentoCache" target="_blank" rel="details" >
+                                    Magento Cache Wrapper class
+                                </a>
+                            </h3>
+                            <div class="experiences__company-project-responsibilities">
+                                <p>
+                                    I noticed Magento Framework has not convenient interface to work with Cache in code. I tried to solve this problem in my Module.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="experiences__company-project">
+                            <span class="experiences__company-project-role">PHP</span>
+                            <h3 class="experiences__company-project-name">
+                                <a class="experiences__company-project-link" href="https://github.com/guentur/my_MVC_Framework/" target="_blank" rel="details" >
+                                    Simple MVC Framework
+                                </a>
+                            </h3>
+                            <div class="experiences__company-project-responsibilities">
+                                <p>
+                                    <a href="https://github.com/guentur/OOP_MVC_training" target="_blank" rel="details" >After taking</a> free <a href="http://code.mu/ru/php/book/oop/" target="_blank" rel="details" >PHP Course</a>, I improved the tutorial MVC Framework! I added ability to customize the View component.
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="additional-info fv">
-                        <div class="additional-info__education">
-                            <h3 class="additional-info__education-header">Education</h3>
-                            <div class="additional-info__education-university">
-                                <span class="additional-info__education-university-durability">2021</span>
-                                <h3 class="additional-info__education-university-speciality">Cat track</h3>
-                                <p class="additional-info__education-university-name">Binary Studio Academy</p>
-                            </div>
+                        <div class="additional-info-block">
+                            <h4 class="additional-info-block__header">LANGUAGES</h4>
+                            <p class="additional-info-block__item">
+                                Ukrainian 🇺🇦
+                            </p>
+                            <p class="additional-info-block__item">
+                                Russian 🇷🇺
+                            </p>
+                            <p class="additional-info-block__item">
+                                English (intermediate) 🇺🇸
+                            </p>
                         </div>
-
-                        <div class="additional-info__languages">
-                            <h3 class="additional-info__languages-header">Languages</h3>
-                            <p class="additional-info__languages-item">
-                                Meow dialect
-                            </p>
-                            <p class="additional-info__languages-item">
-                                Ukrainian (understand)
-                            </p>
-                            <p class="additional-info__languages-item">
-                                English (don't understand)
-                            </p>
+                        <div class="additional-info-block">
+                            <div class="timeline">
+                                <ul>
+                                    <li class="selected" data-date="20/06/2014">
+                                        <h2>Moved to <a href="https://en.wikipedia.org/wiki/Chernivtsi" rel="details" target="_blank">Chernivtsi</a>
+                                            from my parents apartment to live self-dependent life</h2>
+                                        <em>February 16st, 2022</em>
+                                    </li>
+                                    <li class="selected" data-date="20/05/2014">
+                                        <h2>Entered the University</h2>
+                                        <em>September 1st, 2021</em>
+                                        <a href="https://e-u.edu.ua/ua/navchalni-pidrozdili/fakulteti/fakultet-informatsijnih-sistem-ta-tehnologij/" rel="details" target="_blank">
+                                            <p>European University</p>
+                                        </a>
+                                        <em>Computer Science</em>
+                                        <p>2021-2025</p>
+                                    </li>
+                                    <li data-date="20/04/2014">
+                                        <h2>Enrolled the Maritime College</h2>
+                                        <em>September 1st, 2018</em>
+                                        <a href="http://kmc.ks.ua/" rel="details" target="_blank">
+                                            <p>Maritime Applied College of Kherson State Maritime Academy</p>
+                                        </a>
+                                        <em>Installation and Maintenance of Electrical Equipment of Ship Electrical Equipment</em>
+                                    </li>
+                                    <li data-date="20/03/2014">
+                                        <h2>Entered the Lyceum</h2>
+                                        <em>September 1st, 2016</em>
+                                        <a href="https://nktel.jimdofree.com/" rel="details" target="_blank">
+                                            <p >Technical and Economic Lyceum in Nova Kakhovka</p>
+                                        </a>
+                                        <em>Chemistry, Mathematics</em>
+                                    </li>
+                                    <li data-date="28/02/2014">
+                                        <h2>Went to a music school</h2>
+                                        <em>September 1st, 2015</em>
+                                        <p>
+                                            I played a bandura!
+                                        </p>
+                                    </li>
+                                    <li data-date="16/01/2014">
+                                        <h2>Went to the first grade!</h2>
+                                        <em>September 1st, 2009</em>
+                                    </li>
+                                    <li data-date="16/12/2013">
+                                        <h2>Born in Nova Kakhovka, Kherson Oblast, Ukraine</h2>
+                                        <em>March 24th, 2003</em>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

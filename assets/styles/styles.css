@@ -17,6 +17,12 @@ body {
     --icon-color: #6a737d;
     --border-color: #ff9a0045;
     --text-decoration-color: #ff9a00;
+    --background-color: #072736;
+}
+
+main {
+    background: var(--background-color);
+    padding: 50px 0;
 }
 
 .container {
@@ -28,7 +34,7 @@ body {
 .fh {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .fv {
@@ -43,6 +49,7 @@ body {
     box-shadow: 1px 1px 7px 7px #f5f5f5;
     padding: 30px 0;
     max-width: 900px;
+    background: rgba(246,247,242);
 }
 
 .resume__block {
@@ -96,6 +103,7 @@ Contact info styles
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 30%;
 }
 
 .contact-info__block--center {
@@ -183,15 +191,28 @@ Intro and skills styles
     text-align: justify;
 }
 
-.flex-lists {
+.lists {
+    list-style-type: none;
+    list-style-position: inside;
+
+}
+
+.lists__item--half-width {
+    width: 30%;
+}
+
+.lists__item--column {
     display: flex;
-    justify-content: space-between;
-    max-width: 600px;
-    list-style-type: "\1F44D";
+    flex-direction: column;
+    align-items: center;
+}
+
+.lists__item-list {
+    list-style-type: none;
     list-style-position: inside;
 }
 
-.flex-lists__item-header {
+.lists__item-header {
     margin-bottom: 5px;
     color: var(--primary-text-color);
 }
@@ -200,8 +221,8 @@ Intro and skills styles
 Experience and additional info styles
  */
 .experiences {
-    flex: 1 1 60%;
-    margin-right: 50px;
+    flex: 1 1 50%;
+    padding-right: 50px;
 }
 
 .experiences__header {
@@ -249,7 +270,10 @@ Experience and additional info styles
 }
 
 .additional-info {
-    flex: 1 1 40%;
+    flex: 1 1 50%;
+    justify-content: normal;
+    align-items: center;
+    gap: 25px;
 }
 
 .additional-info__education {
