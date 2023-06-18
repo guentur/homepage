@@ -120,6 +120,11 @@ Contact info styles
     justify-content: center;
 }
 
+.contact-info__item-icon-wrapper img {
+    width: 20px;
+    height: 20px;
+}
+
 .contact-info__item-icon path {
     fill: var(--icon-color);
 }
@@ -176,6 +181,19 @@ Intro and skills styles
 .skills__text {
     color: var(--secondary-text-color);
     text-align: justify;
+}
+
+.flex-lists {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    list-style-type: "\1F44D";
+    list-style-position: inside;
+}
+
+.flex-lists__item-header {
+    margin-bottom: 5px;
+    color: var(--primary-text-color);
 }
 
 /**
