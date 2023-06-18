@@ -183,6 +183,19 @@ Intro and skills styles
     text-align: justify;
 }
 
+.flex-lists {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    list-style-type: "\1F44D";
+    list-style-position: inside;
+}
+
+.flex-lists__item-header {
+    margin-bottom: 5px;
+    color: var(--primary-text-color);
+}
+
 /**
 Experience and additional info styles
  */
